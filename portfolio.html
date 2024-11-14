@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat Chauhan | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            transition: background-color 0.5s ease;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: #61dafb;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #61dafb;
+            transition: transform 0.3s ease;
+            margin-top: 20px;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        nav {
+            text-align: center;
+            margin: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #61dafb;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #121212;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #61dafb;
+            text-transform: uppercase;
+        }
+        .description, .education, .projects, .contact {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .description span {
+            font-weight: bold;
+            color: #61dafb;
+        }
+        .education img, .projects img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5em;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .links a:hover {
+            transform: scale(1.1);
+            color: #61dafb;
+        }
+        .social-media {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-media img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://media.licdn.com/dms/image/v2/D5603AQH1Ga816xdB1A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723999724899?e=1736985600&v=beta&t=A3uinRfrGXskS1cQ4OBrm1gGD0J-tXP_IkLx9IqVrVI" alt="Akshat Chauhan">
+    <h1>Akshat Chauhan</h1>
+    <p>Pursuing B.Tech in CS and AI | Newton School of Technology, Rishihood University</p>
+</header>
+
+<nav>
+    <a href="#description">Introduction</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="description">
+    <h2>Introduction</h2>
+    <p class="description">
+        Hi, I'm <span>Akshat Chauhan</span>, a passionate tech enthusiast currently pursuing a <span>B.Tech in Computer Science and AI</span> at <span>Newton School of Technology, Rishihood University</span>. I have always been fascinated by technology and its ability to solve real-world problems.
+    </p>
+    <p class="description">
+        In 12th grade, I worked on a project titled <span>"Diabetes Data Representer"</span>, which used Python to analyze and visualize diabetic data. This project was a significant milestone for me, where I applied my skills in Python and data visualization.
+    </p>
+    <p class="description">
+        Before diving into my tech journey, I completed my schooling at <span>Gurukul The School, Ghaziabad</span>, where I developed a strong foundation in subjects that sparked my interest in programming and technology.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <p class="education">
+        Currently, I am pursuing my <span>B.Tech in Computer Science and AI</span> at <span>Newton School of Technology, Rishihood University</span>.
+    </p>
+    <img src="https://www.eduska.com/assets/user_photo/bd3563941129b99009ee16888d4b5678.jpg" alt="Newton School of Technology">
+    <p class="education">
+        Previously, I completed my schooling at <span>Gurukul The School, Ghaziabad</span>.
+    </p>
+    <img src="https://images.uniapply.com/uploads/college/image/500/7067/Gurukul_The_School_677_Building_1.jpg" alt="Gurukul The School">
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <p class="projects">
+        I have worked on several projects, including a Python-based <span>"Diabetes Data Representer"</span> to analyze and visualize diabetic data.
+    </p>
+    <p class="projects">
+        You can also check out a problem I worked on recently: <a href="https://codeforces.com/problemset/problem/231/A" target="_blank" style="color: #61dafb;">Codeforces Problem 231A</a>.
+    </p>
+    <p class="projects">
+        I have also worked in editing various multimedia formats, including video, audio, and photo editing. Additionally, I have created presentations using tools like PowerPoint and Google Slides for different academic and personal projects.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p class="contact">
+        You can reach out to me via the following links or email:
+    </p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/akshat-chauhan-8b80262a9/" target="_blank">
+            <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/akshat18710/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+        </a>
+    </div>
+    <p class="contact">
+        Or, you can email me directly at: <a href="mailto:akshatchauhan1346@gmail.com" style="color: #61dafb;">akshatchauhan1346@gmail.com</a>
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Akshat Chauhan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
