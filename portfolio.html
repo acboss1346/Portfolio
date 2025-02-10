@@ -15,43 +15,48 @@
         }
         header {
             background-color: #1a1a1a;
-            padding: 40px 20px;
+            padding: 30px 20px;
             text-align: center;
             animation: fadeIn 2s ease-in-out;
         }
         header h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             margin: 0;
             color: #61dafb;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
         }
         header img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            border: 4px solid #61dafb;
+            border: 3px solid #61dafb;
             transition: transform 0.3s ease;
-            margin-top: 20px;
+            margin-top: 15px;
         }
         header img:hover {
             transform: scale(1.1);
         }
         nav {
-            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             margin: 20px;
+            gap: 10px;
         }
         nav a {
             text-decoration: none;
             color: #fff;
-            font-size: 1.2em;
-            margin: 0 15px;
-            padding: 10px 20px;
+            font-size: 1em;
+            padding: 10px 15px;
             border-radius: 5px;
             background-color: #61dafb;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+            flex: 1 1 45%;
+            max-width: 150px;
         }
         nav a:hover {
             background-color: #fff;
@@ -59,19 +64,19 @@
             transform: scale(1.1);
         }
         section {
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 2.2em;
+            margin-bottom: 15px;
             color: #61dafb;
             text-transform: uppercase;
         }
         .description, .education, .projects, .contact {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            line-height: 1.6;
+            font-size: 1em;
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
         .description span {
             font-weight: bold;
@@ -83,25 +88,15 @@
             border-radius: 8px;
             margin-top: 20px;
         }
-        .links a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.5em;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-        .links a:hover {
-            transform: scale(1.1);
-            color: #61dafb;
-        }
         .social-media {
             margin-top: 20px;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
         }
         .social-media img {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             transition: transform 0.3s ease;
         }
@@ -115,24 +110,72 @@
             font-size: 0.9em;
         }
         @keyframes fadeIn {
-            from {
-                opacity: 0;
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
             }
-            to {
-                opacity: 1;
+            header p {
+                font-size: 1em;
+            }
+            nav {
+                gap: 5px;
+            }
+            nav a {
+                font-size: 0.9em;
+                padding: 8px 12px;
+                max-width: 130px;
+            }
+            section {
+                padding: 30px 15px;
+            }
+            section h2 {
+                font-size: 1.8em;
+            }
+            .description, .education, .projects, .contact {
+                font-size: 0.9em;
+            }
+            .social-media img {
+                width: 35px;
+                height: 35px;
             }
         }
-        /* Smooth scroll */
-        html {
-            scroll-behavior: smooth;
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+            nav {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+            }
+            nav a {
+                font-size: 0.85em;
+                padding: 7px 10px;
+                max-width: none;
+                width: 100%;
+            }
+            section h2 {
+                font-size: 1.5em;
+            }
+            .description, .education, .projects, .contact {
+                font-size: 0.85em;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="https://media.licdn.com/dms/image/v2/D5603AQH1Ga816xdB1A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723999724899?e=1736985600&v=beta&t=A3uinRfrGXskS1cQ4OBrm1gGD0J-tXP_IkLx9IqVrVI" alt="Akshat Chauhan">
     <h1>Akshat Chauhan</h1>
+    <img src="untitled folder/WhatsApp Image 2025-02-10 at 09.36.19.jpeg" alt="Akshat Chauhan">
     <p>Pursuing B.Tech in CS and AI | Newton School of Technology, Rishihood University</p>
 </header>
 
@@ -148,12 +191,6 @@
     <p class="description">
         Hi, I'm <span>Akshat Chauhan</span>, a passionate tech enthusiast currently pursuing a <span>B.Tech in Computer Science and AI</span> at <span>Newton School of Technology, Rishihood University</span>. I have always been fascinated by technology and its ability to solve real-world problems.
     </p>
-    <p class="description">
-        In 12th grade, I worked on a project titled <span>"Diabetes Data Representer"</span>, which used Python to analyze and visualize diabetic data. This project was a significant milestone for me, where I applied my skills in Python and data visualization.
-    </p>
-    <p class="description">
-        Before diving into my tech journey, I completed my schooling at <span>Gurukul The School, Ghaziabad</span>, where I developed a strong foundation in subjects that sparked my interest in programming and technology.
-    </p>
 </section>
 
 <section id="education">
@@ -162,10 +199,6 @@
         Currently, I am pursuing my <span>B.Tech in Computer Science and AI</span> at <span>Newton School of Technology, Rishihood University</span>.
     </p>
     <img src="https://www.eduska.com/assets/user_photo/bd3563941129b99009ee16888d4b5678.jpg" alt="Newton School of Technology">
-    <p class="education">
-        Previously, I completed my schooling at <span>Gurukul The School, Ghaziabad</span>.
-    </p>
-    <img src="https://images.uniapply.com/uploads/college/image/500/7067/Gurukul_The_School_677_Building_1.jpg" alt="Gurukul The School">
 </section>
 
 <section id="projects">
@@ -173,18 +206,12 @@
     <p class="projects">
         I have worked on several projects, including a Python-based <span>"Diabetes Data Representer"</span> to analyze and visualize diabetic data.
     </p>
-    <p class="projects">
-        You can also check out a problem I worked on recently: <a href="https://codeforces.com/problemset/problem/231/A" target="_blank" style="color: #61dafb;">Codeforces Problem 231A</a>.
-    </p>
-    <p class="projects">
-        I have also worked in editing various multimedia formats, including video, audio, and photo editing. Additionally, I have created presentations using tools like PowerPoint and Google Slides for different academic and personal projects.
-    </p>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
     <p class="contact">
-        You can reach out to me via the following links or email:
+        You can reach out to me via:
     </p>
     <div class="social-media">
         <a href="https://www.linkedin.com/in/akshat-chauhan-8b80262a9/" target="_blank">
@@ -195,7 +222,7 @@
         </a>
     </div>
     <p class="contact">
-        Or, you can email me directly at: <a href="mailto:akshatchauhan1346@gmail.com" style="color: #61dafb;">akshatchauhan1346@gmail.com</a>
+        Or, you can email me at: <a href="mailto:akshatchauhan1346@gmail.com" style="color: #61dafb;">akshatchauhan1346@gmail.com</a>
     </p>
 </section>
 
